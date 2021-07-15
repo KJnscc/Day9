@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form</title>
+
+<link rel="stylesheet" href="Day9-CSS.css">
+</head>
+
+<body>
+<h1>Form</h1>
+
+<form action="mailto:W0468739@pampus.nscc.ca"
+method="post" enctype="text/plain">
+
+<br>  
+
+Your first and Last Name:<br>
+<input type="text" name="YourName" minlength="5" required="required" size="30"><br><br>
+
+Your age:<br>
+<input type="number" name="Yourage" min="16" max="100" required="required" size="50"><br><br>
+
+Selct your provunce:
+<select id="Province">
+    <option value="Alberta">Alberta</option>
+    <option value="British Columbia">British Columbia</option>
+    <option value="Manitoba">Manitoba</option>
+    <option value="New Brunswick">New Brunswick</option>
+    <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+    <option value="Northwest Territories">Northwest Territories</option>
+    <option value="Nova Scotia">Nova Scotia</option>
+    <option value="Nunavut">Nunavut</option>
+    <option value="Ontario">Ontario</option>
+</select>
+<br>
+
+The city that you live in:<br>
+<input type="text" name="City" minlength="5" required="required" size="50"><br><br>
+
+E-mail:<br>
+<input type="email" name="mail" required="required"><br><br>
+
+Enter your GitHub URL here:<br>
+<input type="url" id="url" name="url" required="required"><br><br>
+
+Your phone number:
+<input type="tel" id="phone" name="phone" 
+placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+
+Pick a color:
+<input type="color" name="color" id="color"><br><br>
+
+<label for="TDate">Today's Date:</label><br>
+<input type="date" id="TDate" name="TDate" required="required">
+<br><br>
+
+<input type="submit" value="Send">
+<input type="reset" value="Reset">
+
+</form>
+</head>
+</html>
